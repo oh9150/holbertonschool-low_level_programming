@@ -1,2 +1,2 @@
 #!/bin/bash
-cgg -S $CFILE > ${CFILE/c/s}
+cgg -S $CFILE 
