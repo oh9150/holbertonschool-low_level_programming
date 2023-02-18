@@ -10,11 +10,11 @@
  */
 int main(void)
 {
-	char c;
-	int i;
-	long int l;
-	long long int ll;
-	float f;
+	char c = 'a';
+	int i = 1;
+	long int l = 1;
+	long long int ll = 1;
+	float f = 1;
 	printf("Size of a char: %d byte(s)\n", sizeof(c))
 	printf("Size of an int: %d byte(s)\n", sizeof(i));
 	printf("Size of a long int: %d byte(s)\n", sizeof(l));
