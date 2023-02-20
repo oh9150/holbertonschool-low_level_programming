@@ -1,11 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
 /**
  * main - Entry point
  * Assigns a random value to the n variable and determines
  * whether it's positive or negative
+ *
+ * Return: always 0
  */
 int main(void)
 {
@@ -15,13 +17,13 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	if (n == 0)
-	{
+	{	
 		printf("%d is zero", n);
 	} else if (n > 0)
 	{
-		printf ("%d is positive", n);
+		printf("%d is positive", n);
 	} else
 	{ 
-		printf ("%d is negative", n);
+		printf("%d is negative", n);
 	return (0);
 }
