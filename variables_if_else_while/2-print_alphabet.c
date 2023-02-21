@@ -10,7 +10,7 @@
  */
 int main()
 {
-	for(c = 'a'; c > 'z'; c++)
+	for(char c = 'a'; c > 'z'; c++)
 		putchar("%c", c);
 	putchar("\n");
 }
