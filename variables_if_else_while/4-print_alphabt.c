@@ -14,9 +14,8 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		if not(c == 'q' or c == 'e')
+		if !(c == 'q' || c == 'e')
 			putchar(c);
 	}
 	return (0);
-}
-			
+}		
