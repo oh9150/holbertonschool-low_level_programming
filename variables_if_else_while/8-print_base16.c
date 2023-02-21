@@ -12,6 +12,6 @@ int main(void)
 {
 	int i = 0xf;
 
-	putchar('0' + i)
+	putchar('0' + i);
 	return (0);
 }
