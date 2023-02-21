@@ -10,8 +10,11 @@
  */
 int main(void)
 {
-	int i = 0xf;
+	int c;
 
-	putchar('0' + i);
+	for (c = '0'; c <= '9'; c++)
+		putchar(c);
+	for (c = 'a'; c <= 'f'; c++)
+		putchar(c);
 	return (0);
 }
