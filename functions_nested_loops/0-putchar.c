@@ -1,5 +1,4 @@
-#include <studio.h>
-
+#include <main.h>
 /**
  * main - Entry point
  *
@@ -7,8 +6,9 @@
  *
  * Return: always 0.
  */
-int main(void)
+int _putchar(char c)
 {
-	printf("_putchar");
+	write(1, &c, 1);
+	write(1, '\n', 1);
 	return (0);
 }
