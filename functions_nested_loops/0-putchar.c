@@ -1,4 +1,3 @@
-#include </holbertonschool-low_level_programming/functions_nested_loops/main.h>
 /**
  * main - Entry point
  *
@@ -6,9 +5,8 @@
  *
  * Return: always 0.
  */
-int main()
+int main(char c) 
 {
-	char c;
 
 	_putchar(c);
 }
