@@ -1,17 +1,15 @@
 #include "main.h"
 /**
- * print_alphabet - prints the alphabet using
- * the function _printchar
+ * main - Entry point
+ * 
+ * Description: prints the alphabet using
+ * the function _putchar
  *
  * Return: always 0
- *
-void print_alphabet(void)
+ */
+int main(void)
 {
-	char c;
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		_putchar(c);
-	}
-	_putchar('\n');
+	print_alphabet();
+	return (0);
 }
-*/
+
