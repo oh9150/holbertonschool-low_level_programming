@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * _abs - check description
+ * @n: The value to check.
+ *
+ * Description: Returns the absolute value of a number.
+ *
+ * Returns: The absolute value a number.
+ */
 int _abs(int n);
 {
 	if (n < 0)
