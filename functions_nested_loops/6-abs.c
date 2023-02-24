@@ -6,7 +6,7 @@
  *
  * Description: Returns the absolute value of a number.
  *
- * Returns: The absolute value of n..
+ * Return: The absolute value of n.
  */
 int _abs(int n)
 {
