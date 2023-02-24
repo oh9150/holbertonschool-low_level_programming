@@ -24,3 +24,12 @@ void print_alphabet(void);
  * Return: void
  */
 void print_alphabet_x10(void);
+
+/**
+ * _islower - Check description
+ *
+ * Description: checks if the character is in lowercase.
+ *
+ * Return: 1 if lowercase, 0 if not.
+ */
+int _islower(int c);
