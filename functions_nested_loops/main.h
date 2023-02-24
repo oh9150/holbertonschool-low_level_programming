@@ -13,6 +13,14 @@ int _putchar(char c);
  * print_alphabet - prints the alphabet using
  * the function _printchar
  *
- * Return: always 0
+ * Return: void
  */
 void print_alphabet(void);
+
+/**
+ * print_alphabet_x10 - prints the alphabet followed by a
+ * newline ten times
+ * 
+ * Return: void
+ */
+void print_alphabet_x10(void);
