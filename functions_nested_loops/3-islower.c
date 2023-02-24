@@ -11,6 +11,8 @@ int _islower(char c)
 {
 	char ch;
 
+	if(!(typeof(c) == char))
+		return (0);
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if(ch == c)
