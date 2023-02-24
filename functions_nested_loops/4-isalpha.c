@@ -2,6 +2,7 @@
 
 /**
  * _isalpha - Check description
+ * @c: the value to check.
  *
  * Description: Checks whether a character is a letter.
  *
