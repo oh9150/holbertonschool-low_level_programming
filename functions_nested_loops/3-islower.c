@@ -7,12 +7,10 @@
  *
  * Return: 1 if lowercase, 0 otherwise.
  */
-int _islower(char c)
+int _islower(int c)
 {
 	char ch;
 
-	if(!(typeof(c) == char))
-		return (0);
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
 		if(ch == c)
