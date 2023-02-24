@@ -42,3 +42,15 @@ int _islower(int c);
  * Return: 1 if letter, 0 otherwise.
  */
 int _isalpha(int c);
+
+/**
+ * print_sign - check description
+ * @n: The value to check
+ *
+ * Description: Prints "1" if n is greater than 0,
+ * "0" if it's equal to 0 and "-1" if it's lower than 0.
+ *
+ * Return: 1 if n is greater than 0, 0 if it's equal to 0
+ * and -1 if it's lower than 0.
+ */
+int print_sign(int n);
