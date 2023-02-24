@@ -33,3 +33,12 @@ void print_alphabet_x10(void);
  * Return: 1 if lowercase, 0 if not.
  */
 int _islower(int c);
+
+/**
+ * _isalpha - Check description
+ * 
+ * Description: Checks whether a character is a letter.
+ * 
+ * Return: 1 if letter, 0 otherwise.
+ */
+int _isalpha(int c);
