@@ -4,7 +4,7 @@
  * the function _printchar
  *
  * Return: always 0
- */
+ *
 void print_alphabet(void)
 {
 	char c;
@@ -14,3 +14,4 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
+*/
