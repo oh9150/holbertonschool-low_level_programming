@@ -13,11 +13,11 @@ char _putchar(char c)
 }
 
 /**
- *  * print_alphabet - prints the alphabet using
- *   * the function _printchar
- *    *
- *     * Return: always 0
- *      **/
+ * print_alphabet - prints the alphabet using
+ * the function _printchar
+ * 
+ * Return: always 0
+ */
 void print_alphabet(void)
 {
 	char c;
