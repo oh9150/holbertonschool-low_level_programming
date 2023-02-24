@@ -8,20 +8,19 @@
  *
  * Return: 1 if letter, 0 otherwise.
  */
-int _isalpha(char c)
+int _isalpha(int c)
 {
 	char ch;
 
-	if(!(typeof(c) == char))
-		return (0);
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		if(ch == c)
+		if (ch == c)
 			return (1);
 	}
 	for (ch = 'A'; ch <= 'Z'; ch++)
 	{
-		if(ch == c)
+		if (ch == c)
 			return (1);
+	}
 	return (0);
 }
