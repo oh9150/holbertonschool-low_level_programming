@@ -54,3 +54,5 @@ int _isalpha(int c);
  * and -1 if it's lower than 0.
  */
 int print_sign(int n);
+
+int _abs(int);
