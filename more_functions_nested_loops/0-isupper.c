@@ -2,6 +2,7 @@
 
 /**
  * _isupper - check description
+ * @c: the value to check.
  *
  * Description: checks c and determines if it's an
  * uppercase letter.
