@@ -13,9 +13,9 @@ void times_table(void)
 	int n2;
 	int n3;
 
-	for (n1 = 0; n <= 9; n++)
+	for (n1 = 0; n1 <= 9; n++)
 	{
-		for (n2 = 0; n <= 9; n++)
+		for (n2 = 0; n2 <= 9; n++)
 		{
 			n3 = n2 * n1;
 			write(1, &n3, sizeof(n3));
