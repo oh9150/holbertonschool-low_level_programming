@@ -19,11 +19,8 @@ void times_table(void)
 		{
 			n3 = n2 * n1;
 			if (n3 > 9)
-			{
-				if (n2 != 0)
 				_putchar('0' + (n3 - (n3 % 10)) / 10);
-			}
-			else
+			else if (n2 != 0)
 				_putchar(' ');
 			_putchar('0' + (n3 % 10));
 			if (n2 < 9)
