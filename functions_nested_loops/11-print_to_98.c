@@ -17,14 +17,15 @@ void print_to_98(int n)
 	{
 		for (i = n; i <= 98; i++)
 		{
-			write(1, &i", ", i, sizeof(i) + 2);
+			printf("%d", i);
 		}
 	} else if (n > 98)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			write(1, &i", ", i,  sizeof(i) + 2);
+			printf("%d", i);
 		}
 	} else
-		write(1, "98", 2);
+		printf("%d", i);
+	printf("\n");
 }
