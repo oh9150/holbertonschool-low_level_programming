@@ -18,7 +18,8 @@ void times_table(void)
 		for (n2 = 0; n2 <= 9; n2++)
 		{
 			n3 = n2 * n1;
-			write(1, &n3, sizeof(n3));
+			_putchar('0' + (n3 - n3 % 10));
+			_putchar('0' + (n3 % 10));
 			write(1, ", ", 2);
 		}
 		_putchar('\n');
