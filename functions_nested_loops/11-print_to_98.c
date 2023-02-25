@@ -17,13 +17,13 @@ void print_to_98(int n)
 	{
 		for (i = n; i <= 98; i++)
 		{
-			write(1, &i", ", sizeof(i) + 2);
+			write(1, &i", ", i, sizeof(i) + 2);
 		}
 	} else if (n > 98)
 	{
 		for (i = n; i >= 98; i--)
 		{
-			write(1, &n", ", sizeof(i) + 2);
+			write(1, &i", ", i,  sizeof(i) + 2);
 		}
 	} else
 		write(1, "98", 2);
