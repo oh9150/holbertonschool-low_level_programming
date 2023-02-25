@@ -23,7 +23,8 @@ void times_table(void)
 			else
 				_putchar(' ');
 			_putchar('0' + (n3 % 10));
-			write(1, ", ", 2);
+			if (n2 < 9)
+				write(1, ", ", 2);
 		}
 		_putchar('\n');
 	}
