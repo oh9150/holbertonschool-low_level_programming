@@ -17,10 +17,18 @@ void print_to_98(int n)
 	{
 		for (i = n; i <= 98; i++)
 		{
+			if (n < 0)
+			{
+				_putchar('-');
+			}
 			if (i >= 100)
-				_putchar('0' + (i - (i % 100))/100);
+			{
+				_putchar('0' + (i - (i % 100)) / 100);
+			}
 			if (i >= 10)
-				_putchar('0' + (i - (i % 10))/10);
+			{
+				_putchar('0' + (i - (i % 10)) / 10);
+			}
 			_putchar('0' + (i - (i % 10)));
 		}
 	} else if (n > 98)
@@ -28,12 +36,18 @@ void print_to_98(int n)
 		for (i = n; i >= 98; i--)
 		{           
 			if (i >= 100)
-				_putchar('0' + (i - (i % 100))/100);
+			{
+				_putchar('0' + (i - (i % 100)) / 100);
+			}
 			if (i >= 10)
-				_putchar('0' + (i - (i % 10))/10);
+			{
+				_putchar('0' + (i - (i % 10)) / 10);
+			}
 			_putchar('0' + (i - (i % 10)));
 		}
 	} else
+	{
 		write(1, "98", 2);
+	}
 	_putchar('\n');
 }
