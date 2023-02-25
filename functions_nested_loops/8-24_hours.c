@@ -17,7 +17,7 @@ void jack_bauer(void)
 		for (j = 0; j <= 59; j++)
 		{
 			if (i > 9)
-				_putchar('0' + (i - (i % 10)) / 10);       	
+				_putchar('0' + (i - (i % 10)) / 10);
 			else
 				_putchar('0');
 			_putchar('0' + i % 10);
