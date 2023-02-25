@@ -34,6 +34,6 @@ void print_to_98(int n)
 			_putchar('0' + (i - (i % 10)));
 		}
 	} else
-		_putchar("98")
-	printf("\n");
+		write(1, "98", 2);
+	_putchar('\n');
 }
