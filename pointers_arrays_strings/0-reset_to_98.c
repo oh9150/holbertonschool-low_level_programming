@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - check description
- * @c: pointer of a variable
+ * @n: pointer of a variable
  *
  * Description: set the value of the variable c
  * is pointing to to 98.
