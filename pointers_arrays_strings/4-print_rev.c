@@ -10,5 +10,5 @@
  */
 void print_rev(char *s)
 {
-	_putchar(sizeof (s))
+	_putchar(sizeof (s));
 }
