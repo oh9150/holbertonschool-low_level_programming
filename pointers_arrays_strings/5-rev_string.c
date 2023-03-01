@@ -19,7 +19,7 @@ void rev_string(char *s)
 	{}
 	i--;
 	len = i;
-	for (; i >= len / 2; i--)
+	for (; i >= len; i--)
 	{
 		s[i] = s[j];
 		j++;
