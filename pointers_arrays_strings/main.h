@@ -9,3 +9,5 @@ int _putchar(int);
 void print_rev(char *s);
 
 void rev_string(char *s);
+
+void puts2(char *str);
