@@ -7,7 +7,7 @@
  *
  * Description: copies string src into string dest.
  *
- * Return: pointer to dest 
+ * Return: pointer to dest
  */
 char *_strcpy(char *dest, char *src)
 {
