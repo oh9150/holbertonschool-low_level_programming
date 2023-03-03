@@ -10,7 +10,7 @@
  * Return: -1 if s1 is lower than s2, 0 if it's equal to s2
  * and 1 if it's greater than s2
  */
-int _strcmp(char *s1; char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 
