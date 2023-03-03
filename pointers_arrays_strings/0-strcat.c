@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strcat - check description
+ * _strcat - check description
  * @dest: the string that src will append to
  * @src: the string that will append to dest
  *
