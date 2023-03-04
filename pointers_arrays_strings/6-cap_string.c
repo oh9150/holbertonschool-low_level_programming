@@ -23,7 +23,7 @@ char *string_toupper(char *s)
 		afterseparator = 0;
 		for (j = 0; j < 13; j++)
 		{
-			if ((separators[j]) = i)
+			if (separators[j] == i)
 			{
 				afterseparator = 1;
 				break;
