@@ -8,7 +8,7 @@
  *
  * Return: The capitalized string.
  */
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
 	int i = 0;
 	int j;
