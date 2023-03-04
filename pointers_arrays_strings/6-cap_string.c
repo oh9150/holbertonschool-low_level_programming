@@ -13,7 +13,7 @@ char *string_toupper(char *s)
 	int i = 0;
 	int j;
 	int afterseparator = 1;
-	char separators[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'}
+	char separators[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
 	while (s[i] != '\0')
 	{
@@ -26,7 +26,6 @@ char *string_toupper(char *s)
 			if (separators[j] = i)
 			{
 				afterseparator = 1;
-				
 				break;
 			}
 		}
