@@ -13,7 +13,8 @@ char *cap_string(char *s)
 	int i = 0;
 	int j;
 	int afterseparator = 1;
-	char separators[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+	char separators[13] = {' ', '\t', '\n', ',', ';', '.',
+	       '!', '?', '"', '(', ')', '{', '}'};
 
 	while (s[i] != '\0')
 	{
