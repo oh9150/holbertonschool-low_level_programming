@@ -2,6 +2,7 @@
 
 /**
  * _puts_recursion - check description
+ * @s: the string to print
  *
  * Description: prints a string, followed by a newline
  * using recursion.
