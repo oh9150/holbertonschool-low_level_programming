@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
  * main - entry point
+ * @argc: size of argv
+ * @argv: an array of the arguments passed by the compiler
  *
  * Description: prints the name of the file, followed
  * by a newline.
