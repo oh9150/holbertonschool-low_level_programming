@@ -38,16 +38,15 @@ int main(int argc, char *argv[])
 		{
 			coins = (total_value - (total_value % coin_value)) / coin_value;
 			total_value = total_value % coin_value;
-
-			if (coin_value == 25)
-				coin_value = 10;
-			else if (coin_value == 10)
-				coin_value = 5;
-			else if (coin_value == 5)
-				coin_value = 2;
-			else
-				coin_value = 1;
 		}
+		if (coin_value == 25)
+			coin_value = 10;
+		else if (coin_value == 10)
+			coin_value = 5;
+		else if (coin_value == 5)
+			coin_value = 2;
+		else
+			coin_value = 1;
 	}
 	printf("%d\n", coins);
 	return (0);
