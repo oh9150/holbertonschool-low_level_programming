@@ -18,20 +18,26 @@ int main(int argc, char *argv[])
 {
 	int coins = 0;
 	int coin_value = 25;
+	int total_value
 
 	if (argc != 2)
 	{
 		printf("Error");
 		return(1);
 	}
-	argv[1] = atoi(argv[1]);
+	total_value = atoi(argv[1]);
+	if (total_value < 0)
+	{
+		printf("0");
+		return (0);
+	}
 
 	while (coin_value != 1)
 	{
-		if (argv[1] >= coin_value)
+		if (total_value >= coin_value)
 		{
-			coins = (argv[1] - (argv[1] % coin_value)) / coin_value;
-			argv[1] = argv[1] % coin_value;
+			coins = (total_value - (total_value % coin_value)) / coin_value;
+			total_value = total_value % coin_value;
 
 			if (coin_value == 25)
 				coin_value = 10;
@@ -43,4 +49,6 @@ int main(int argc, char *argv[])
 				coin_value = 1;
 		}
 	}
+	printf("%d\n", coins)
+	return (0)
 }
