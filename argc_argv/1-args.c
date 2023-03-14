@@ -11,7 +11,7 @@
  *
  * Return: 0
  */
-int main(int argc, __unused__((argument))char *argv[])
+int main(int argc, __argument__((unused))char *argv[])
 {
 	printf("%d\n", argc);
 
