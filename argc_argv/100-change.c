@@ -22,13 +22,13 @@ int main(int argc, char *argv[])
 
 	if (argc != 2)
 	{
-		printf("Error");
-		return(1);
+		printf("Error\n");
+		return (1);
 	}
 	total_value = atoi(argv[1]);
 	if (total_value < 0)
 	{
-		printf("0");
+		printf("0\n");
 		return (0);
 	}
 
