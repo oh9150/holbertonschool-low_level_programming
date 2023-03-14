@@ -19,12 +19,12 @@ int main(int argc, char *argv[])
 	if (argc < 2)
 	{
 		printf("0\n");
-		return(0);
+		return (0);
 	}
 	argc--;
 	for (; argc >= 1; argc--)
 	{
-		if (atoi(argv[argc]) != 0)
+		if (atoi(argv[argc])/100 == sizeof(argv[argc]))
 			sum += atoi(argv[argc]);
 		else
 		{
