@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 	{
 		if (total_value >= coin_value)
 		{
-			coins = coins += (total_value - (total_value % coin_value)) / coin_value;
+			coins = coins + (total_value - (total_value % coin_value)) / coin_value;
 			total_value = total_value % coin_value;
 		}
 		if (coin_value == 25)
