@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 {
 	int coins = 0;
 	int coin_value = 25;
-	int total_value
+	int total_value;
 
 	if (argc != 2)
 	{
@@ -49,6 +49,6 @@ int main(int argc, char *argv[])
 				coin_value = 1;
 		}
 	}
-	printf("%d\n", coins)
-	return (0)
+	printf("%d\n", coins);
+	return (0);
 }
