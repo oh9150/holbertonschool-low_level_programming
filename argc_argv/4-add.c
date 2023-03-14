@@ -22,10 +22,10 @@ int main(int argc, char *argv[])
 		return(0);
 	}
 	argc--;
-	for (; argc >= 1; argc--;)
+	for (; argc >= 1; argc--)
 	{
 		if (atoi(argv[argc]) != 0)
-			sum += argv[argc];
+			sum += atoi(argv[argc]);
 		else
 		{
 			printf("Error");
@@ -34,3 +34,4 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", sum);
 	return (0);
+}
