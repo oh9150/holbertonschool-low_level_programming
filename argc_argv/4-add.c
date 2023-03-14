@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	argc--;
 	for (; argc >= 1; argc--)
 	{
-		if (atoi(argv[argc])/100 == sizeof(argv[argc]))
+		if (atoi(argv[argc]) != 0)
 			sum += atoi(argv[argc]);
 		else
 		{
