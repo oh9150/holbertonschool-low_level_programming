@@ -20,7 +20,10 @@ char *_strdup(char *str)
 		return (NULL);
 
 	while (*str)
+	{
 		len++;
+		str++;
+	}
 
 	s = (char *)malloc(len * sizeof(char));
 	if (s == NULL)
@@ -29,7 +32,6 @@ char *_strdup(char *str)
 	while (len >= 0)
 	{
 		s[len] = *str;
-		*str++;
 		len--;
 	}
 	return (s);
