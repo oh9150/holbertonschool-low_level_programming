@@ -23,9 +23,7 @@ char *create_array(unsigned int size, char c)
 
 	ptr = (char *)malloc(sizeof(char) * size);
 
-	printf("%c", ptr);
-
-	if (*ptr == '\0')
+	if (ptr == '\0')
 		return ('\0');
 
 	while (i <= size)
