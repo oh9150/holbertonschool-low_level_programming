@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	if (s == NULL)
 		return (NULL);
 
-	while (len >= 0)
+	while (len > 0)
 	{
 		s[len] = *str;
 		len--;
