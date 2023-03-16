@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * create_array - check description
@@ -21,6 +22,8 @@ char *create_array(unsigned int size, char c)
 		return ('\0');
 
 	ptr = (char *)malloc(sizeof(char) * size);
+
+	printf(ptr);
 
 	if (*ptr == '\0')
 		return ('\0');
