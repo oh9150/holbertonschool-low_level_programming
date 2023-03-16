@@ -21,8 +21,9 @@ char *create_array(unsigned int size, char c)
 		return ('\0');
 
 	ptr = (char *)malloc(sizeof(char) * size);
-	if (*ptr == '\0')
-		return ('\0');
+
+//	if (*ptr == '\0')
+//		return ('\0');
 
 	while (i <= size)
 	{
