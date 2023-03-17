@@ -1,4 +1,4 @@
-#include "main.h"
+nclude "main.h"
 #include <stdlib.h>
 
 /**
@@ -13,17 +13,17 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len1, len2 = 0;
+	int len = 0;
 	char *new_str, *ptr1, *ptr2;
 	int i = 0;
 
-	ptr1 = s1;
-	ptr2 = s2;
+	s1 = ptr1;
+	s2 = ptr2;
 	if (s1)
 	{
 		while (*s1)
 		{
-			len1++;
+			len++;
 			s1++;
 		}
 	}
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		while (*s2)
 		{
-			len2++;
+			len++;
 			s2++;
 		}
 	}
@@ -42,23 +42,26 @@ char *str_concat(char *s1, char *s2)
 	if (!(new_str))
 		return (NULL);
 
-	if (s1 || s2)
+	if (s1)
 	{
-		while(len1 + len2 >= i)
+		while(*ptr1)
 		{
-			if (len1 > i)
-			{
-				*new_str[i] = *ptr1;
-				ptr1++;
-			}else 
-			{
-				*new_str[i] = *ptr2;
-				ptr1++;
-			}
+			*new_str[i] = *ptr1;
 			i++;
+			ptr1++;
+		}
+	}
+	if (s2)
+	{
+		while (*ptr1)
+		{
+			*new_string[i] = *ptr1;
+			i++;
+			ptr2++;
 		}
 	}
 	*new_string[i] = '\0';
 
 	return (new_str);
 }
+
