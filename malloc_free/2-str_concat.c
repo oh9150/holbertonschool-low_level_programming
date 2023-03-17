@@ -46,21 +46,21 @@ char *str_concat(char *s1, char *s2)
 	{
 		while(*ptr1)
 		{
-			*new_str[i] = *ptr1;
+			new_str[i] = *ptr1;
 			i++;
 			ptr1++;
 		}
 	}
 	if (s2)
 	{
-		while (*ptr1)
+		while (*ptr2)
 		{
-			*new_string[i] = *ptr1;
+			new_string[i] = *ptr2;
 			i++;
 			ptr2++;
 		}
 	}
-	*new_string[i] = '\0';
+	new_string[i] = '\0';
 
 	return (new_str);
 }
