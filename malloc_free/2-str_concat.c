@@ -55,7 +55,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		while (*ptr2)
 		{
-			new_string[i] = *ptr2;
+			new_str[i] = *ptr2;
 			i++;
 			ptr2++;
 		}
