@@ -16,8 +16,6 @@ char *str_concat(char *s1, char *s2)
 	char *new_str, *ptr1, *ptr2;
 	int i = 0;
 
-	s1 = ptr1;
-	s2 = ptr2;
 	ptr1 = s1;
 	ptr2 = s2;
 	if (s1)
