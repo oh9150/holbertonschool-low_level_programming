@@ -16,24 +16,29 @@ char *argstostr(int ac, char **av)
 	int i, j, len = 0;
 	char *new_str;
 
+	if (ac == 0 || av == NULL)
+		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		while (*av[i])
+		for (j = 0; av[i][j]; j++)
 			len++;
+		len++;
 	}
 	new_str = (char *)malloc((len + 1) * sizeof(char));
+	if (new_str == NULL)
+		return (NULL);
 	len = 0;
 	for (i = 0; i < ac; i++)
 	{
-		j = 0;
-		while (*av[i])
+		for (j = 0; av[i][j]; j++)
 		{
 			new_str[len] =  av[i][j];
-			j++;
 			len++;
 		}
 		new_str[len] = '\n';
 		len++;
 	}
+	new_str[len] = '\0';
+
 	return (new_str);
 }
