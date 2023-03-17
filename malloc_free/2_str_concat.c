@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
  * str_concat - check description
  * @s1: the first string to concatenate
@@ -17,6 +16,8 @@ char *str_concat(char *s1, char *s2)
 	char *new_str, *ptr1, *ptr2;
 	int i = 0;
 
+	s1 = ptr1;
+	s2 = ptr2;
 	ptr1 = s1;
 	ptr2 = s2;
 	if (s1)
@@ -27,7 +28,6 @@ char *str_concat(char *s1, char *s2)
 			s1++;
 		}
 	}
-
 	if (s2)
 	{
 		while (*s2)
@@ -36,12 +36,10 @@ char *str_concat(char *s1, char *s2)
 			s2++;
 		}
 	}
-
 	len++;
 	new_str = (char *)malloc(len * sizeof(char));
 	if (!(new_str))
 		return (NULL);
-
 	if (s1)
 	{
 		while(*ptr1)
@@ -61,7 +59,5 @@ char *str_concat(char *s1, char *s2)
 		}
 	}
 	new_str[i] = '\0';
-
 	return (new_str);
 }
-
