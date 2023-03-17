@@ -47,11 +47,11 @@ char *str_concat(char *s1, char *s2)
 		{
 			if (len1 > i)
 			{
-				*new_str[i] = *ptr1;
+				new_str[i] = *ptr1;
 				ptr1++;
 			}else 
 			{
-				*new_str[i] = *ptr2;
+				new_str[i] = *ptr2;
 				ptr1++;
 			}
 			i++;
