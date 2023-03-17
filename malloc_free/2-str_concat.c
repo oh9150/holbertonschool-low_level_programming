@@ -1,53 +1,63 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * str_concat - A function that concatenates two strings
- * @s1: An input pointer of the first string
- * @s2: An input pointer of the second string
- * Return: Apointer to concatened strings or NULL if it str is NULL
+ * str_concat - check description
+ * @s1: the first string to concatenate
+ * @s2: the second string to concatenate
+ *
+ * Description: concatenates [s1] with [s2], if either of them
+ * are NULL it's treated as an empty string and stores it into a new space in memory
+ *
+ * Return: a pointer to the new string, or NULL if not enough memory
  */
 char *str_concat(char *s1, char *s2)
 {
+	int len = 0;
 	char *new_str, *ptr1, *ptr2;
-	int i, len1, len2 = 0;
+	int i = 0;
 
+	s1 = ptr1;
+	s2 = ptr2;
 	ptr1 = s1;
 	ptr2 = s2;
-	if (s1 == NULL)
-		s1 = "";
-	while (*s1)
+	if (s1)
 	{
-		len1++;
-		s1++;
-	}
-	s1 = ptr1;
-	if (s2 == NULL)
-		s2 = "";
-	while (*s2)
-	{
-		len2++;
-		s2++;
-	}
-	s2 = ptr2;
-	new_str = malloc(sizeof(char) * (len1 + len2 + 1));
-	ptr1 = new_str;
-	if (new_str == NULL)
-		return (NULL);
-	for (; i < (len1 + len2); i++)
-	{
-		if (i < len1)
+		while (*s1)
 		{
-			new_str[i] = *s1;
+			len++;
 			s1++;
 		}
-		else
+	}
+	if (s2)
+	{
+		while (*s2)
 		{
-			new_str[i] = *s2;
+			len++;
 			s2++;
 		}
 	}
+	len++;
+	new_str = (char *)malloc(len * sizeof(char));
+	if (!(new_str))
+		return (NULL);
+	if (s1)
+	{
+		while(*ptr1)
+		{
+			new_str[i] = *ptr1;
+			i++;
+			ptr1++;
+		}
+	}
+	if (s2)
+	{
+		while (*ptr2)
+		{
+			new_str[i] = *ptr2;
+			i++;
+			ptr2++;
+		}
+	}
 	new_str[i] = '\0';
-	return (ptr1);
+	return (new_str);
 }
-
