@@ -23,6 +23,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (new_arr == NULL)
 		return (NULL);
 	for (i = 0; i < nmemb; i++)
-		new_arr[i] = 0;
+		*(new_arr + i) = 0;
 	return (new_arr);
 }
