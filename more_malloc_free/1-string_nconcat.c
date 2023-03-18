@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * string_nconcat - check description
@@ -18,9 +19,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *new_str;
 
 	if (s1 == NULL)
-		s1 = "";
+		*s1 = "";
 	if (s2 == NULL)
-		s2 == "";
+		*s2 == "";
 	while (*s2)
 		i++;
 	if (n > i)
@@ -42,3 +43,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	return (new_str);
 }
+
