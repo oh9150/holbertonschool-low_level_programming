@@ -4,6 +4,7 @@
 /**
  * malolc_checked - asigns memory using malloc; if it
  * fails, causes normal process termination with status value of 98
+ * @b: the ammount of bytes to allocate
  *
  * Return: pointer to the new memory or process termination
  */
