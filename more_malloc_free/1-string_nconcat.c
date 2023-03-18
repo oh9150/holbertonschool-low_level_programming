@@ -15,13 +15,13 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j = 0;
+	unsigned int i, j = 0;
 	char *new_str;
 
 	if (s1 == NULL)
-		*s1 = "";
+		s1 = "";
 	if (s2 == NULL)
-		*s2 == "";
+		s2 = "";
 	while (*s2)
 		i++;
 	if (n > i)
