@@ -12,7 +12,7 @@
  */
 int main(int argc, char *argv[])
 {
-       	long long long long int result, num1, num2;
+       	long int result, num1, num2;
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -21,6 +21,6 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[2]);
 	result = num1 * num2;
-	printf("%d\n", result);
+	printf("%ld\n", result);
 	return (0);
 }
