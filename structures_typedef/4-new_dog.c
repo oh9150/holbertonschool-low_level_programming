@@ -12,6 +12,8 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *dog = {*name, age, *owner};
-	return (dog);
+	new_dog = malloc(sizeof(*name) + sizeof(age) + sizeof(*owner));
+	printf("with *:%d, without: ", sizeof(*name), sizeof(name));
+
+	return (new_dog);
 }
