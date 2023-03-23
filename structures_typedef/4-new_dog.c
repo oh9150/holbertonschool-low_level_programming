@@ -12,11 +12,12 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog;
+	dog_t new_dog;
+	dog_t *new_dog_point = &new_dog;
 	
-	new_dog->name = name;
-	new_dog->age = age;
-	new_dog->owner = owner;
+	new_dog_point->name = name;
+	new_dog_point->age = age;
+	new_dog_point->owner = owner;
 
 	return (new_dog);
 }
