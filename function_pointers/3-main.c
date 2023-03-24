@@ -19,18 +19,18 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error argc");
+		printf("Error\n");
 		exit(98);
 	}
 	function = get_op_func(argv[2]);
 	if (function == NULL)
 	{
-		printf("Error wrong op");
+		printf("Error\n");
 		exit(99);
 	}
 
 	result = function(atoi(argv[1]), atoi(argv[3]));
-	printf("%d", result);
+	printf("%d\n", result);
 
 	return (0);
 }

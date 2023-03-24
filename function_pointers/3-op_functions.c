@@ -4,6 +4,8 @@
 
 /**
  * op_add - adds the two integers
+ * @a: an int
+ * @b: an int
  *
  * Return: the sum of the two integers
  */
