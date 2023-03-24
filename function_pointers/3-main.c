@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	function = get_op_func(argv[2]);
-	if (function() == NULL)
+	if (function == NULL)
 	{
 		printf("Error\n");
 		exit(99);
