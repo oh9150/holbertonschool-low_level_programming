@@ -19,13 +19,13 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error");
+		printf("Error argc");
 		exit(98);
 	}
 	function = get_op_func(argv[2]);
 	if (function == NULL)
 	{
-		printf("Error");
+		printf("Error wrong op");
 		exit(99);
 	}
 
