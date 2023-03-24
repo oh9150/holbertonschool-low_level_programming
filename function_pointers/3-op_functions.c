@@ -63,5 +63,5 @@ int op_div(int a, int b)
 	if (b != 0)
 		return (a % b);
 	printf("Error");
-	exiy(100);
+	exit(100);
 }
