@@ -19,15 +19,15 @@ void print_all(const char * const format, ...)
 	while (*(format + i) && format)
 	{
 		j = 0;
-		while (*(types + j) == *(format + i) || !(*(types + j)))
+		while (*(types + j))
 		{
-			if (i < len - 1)
+			if (*(format + i) == *(types + j))
 			{
 				printf(", ");
 				break;
 			} j++;
 		}
-		switch (*(types + j))
+		switch (*(format + i))
 		{
 			case 'c':
 				printf("%c", va_arg(args, int));
