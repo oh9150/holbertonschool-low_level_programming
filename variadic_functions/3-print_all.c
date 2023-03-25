@@ -1,7 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-#include <string.h>
 
 /**
  * print_all - prints anything
@@ -16,7 +15,7 @@ void print_all(const char * const format, ...)
 	char *types = "cifs";
 	va_list args;
 	char *str;
-	int len = strlen(format);
+	int len = sizeof(format);
 
 	va_start(args, len);
 	while (*format && *(format + i))
