@@ -15,6 +15,7 @@ void print_all(const char * const format, ...)
 	char *types = "cifs", *str;
 	va_list args;
 
+	printf("%d", len);
 	va_start(args, format);
 	while (*(format + i))
 	{
