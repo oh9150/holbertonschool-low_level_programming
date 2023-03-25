@@ -11,7 +11,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0, j = 0, len = strlen(format);
+	int i = 0, j = 0;
 	const char types[4] = "cifs", *str;
 	va_list args;
 
