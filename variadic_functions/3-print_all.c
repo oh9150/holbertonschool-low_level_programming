@@ -30,16 +30,16 @@ void print_all(const char * const format, ...)
 		switch (*(format + i))
 		{
 			case 'c':
-				printf("%c", va_arg(args, int));
+				printf("%c", va_arg(args, int)), comma = 1;
 				break;
 			case 'i':
-				printf("%d", va_arg(args, int));
+				printf("%d", va_arg(args, int)), comma = 1;
 				break;
 			case 'f':
-				printf("%f", va_arg(args, double));
+				printf("%f", va_arg(args, double)), comma = 1;
 				break;
 			case 's':
-				str = va_arg(args, char *);
+				str = va_arg(args, char *), comma = 1;
 				if (str)
 				{
 					printf("%s", str);
@@ -47,7 +47,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("(nil)");
 				break;
-		} i++, comma = 1;
+		} i++;
 	}
 	printf("\n"), va_end(args);
 }
