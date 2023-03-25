@@ -11,14 +11,12 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0, j = 0;
-	char *types = "cifs";
+	int i = 0, j = 0, len = strlen(format);
+	char *types = "cifs", *str;
 	va_list args;
-	char *str;
-	int len = strlen(format);
 
 	va_start(args, format);
-	while (*format && *(format + i))
+	while (*(format + i))
 	{
 		while (*(types + j) == *(format + i))
 		{
@@ -28,7 +26,7 @@ void print_all(const char * const format, ...)
 				break;
 			} j++;
 		} j = 0;
-		switch(types[i])
+		switch (*(types + j))
 		{
 			case 'c':
 				printf("%c", va_arg(args, int));
@@ -50,6 +48,5 @@ void print_all(const char * const format, ...)
 				break;
 		} i++;
 	}
-	printf("\n");
-	va_end(args);
+	printf("\n"), va_end(args);
 }
