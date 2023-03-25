@@ -11,7 +11,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0, j = 0;
+	int i = 0, j = 0, comma = 0;
 	const char types[4] = "cifs", *str;
 	va_list args;
 
@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (*(types + j))
 		{
-			if (*(format + i) == *(types + j))
+			if (*(format + i) == *(types + j) && comma == 1)
 			{
 				printf(", ");
 				break;
@@ -47,6 +47,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("(nil)");
 				break;
+			comma = 1;
 		} i++;
 	}
 	printf("\n"), va_end(args);
