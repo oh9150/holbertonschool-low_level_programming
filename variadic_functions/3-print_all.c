@@ -47,8 +47,7 @@ void print_all(const char * const format, ...)
 				}
 				printf("(nil)");
 				break;
-			comma = 1;
-		} i++;
+		} i++, comma = 1;
 	}
 	printf("\n"), va_end(args);
 }
