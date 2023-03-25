@@ -11,14 +11,14 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0, j = 0, len = strlen(format);
+	int i = 0, j = 0;
 	const char *types = "cifs", *str;
 	va_list args;
 
-	printf("%d", len);
 	va_start(args, format);
 	while (*(format + i))
 	{
+		j = 0;
 		while (*(types + j) == *(format + i) || !(*(types + j)))
 		{
 			if (i < len - 1)
@@ -26,7 +26,7 @@ void print_all(const char * const format, ...)
 				printf(", ");
 				break;
 			} j++;
-		} j = 0;
+		}
 		switch (*(types + j))
 		{
 			case 'c':
