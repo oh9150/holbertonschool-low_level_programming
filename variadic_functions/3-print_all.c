@@ -12,11 +12,11 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0, j = 0, len = strlen(format);
-	const char *types = "cifs", *str;
+	const char types[4] = "cifs", *str;
 	va_list args;
 
 	va_start(args, format);
-	while (*(format + i))
+	while (*(format + i) && format)
 	{
 		j = 0;
 		while (*(types + j) == *(format + i) || !(*(types + j)))
