@@ -12,14 +12,14 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0, j = 0, len = strlen(format);
-	char *types = "cifs", *str;
+	const char *types = "cifs", *str;
 	va_list args;
 
 	printf("%d", len);
 	va_start(args, format);
 	while (*(format + i))
 	{
-		while (*(types + j) == *(format + i))
+		while (*(types + j) == *(format + i) || !(*(types + j)))
 		{
 			if (i < len - 1)
 			{
