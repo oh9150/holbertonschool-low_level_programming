@@ -7,7 +7,7 @@
  *
  * Return: the sum of all integers, or 0 if n == 0
  */
-int sum_them_all(const int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	int sum = 0;
 	int i;
@@ -18,7 +18,7 @@ int sum_them_all(const int n, ...)
 		return (0);
 	for (i = 0; i < n; i++)
 		sum += va_arg(args, int);
-	va_end(ptr);
+	va_end(args);
 
 	return (sum);
 }
