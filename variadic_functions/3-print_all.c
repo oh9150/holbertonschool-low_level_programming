@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-#include <stdlib.h>
+#include <string.h>
 
 /**
  * print_all - prints anything
@@ -32,7 +32,7 @@ void print_all(const char * const format, ...)
 		switch(types[i])
 		{
 			case 'c':
-				printf("%c", va_arg(args, char));
+				printf("%c", va_arg(args, int));
 				break;
 			case 'i':
 				printf("%d", va_arg(args, int));
