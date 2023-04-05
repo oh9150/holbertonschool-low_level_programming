@@ -21,4 +21,4 @@ size_t print_list(list_t *h)
 		i++;
 	}
 	return (i);
-}		
+}
