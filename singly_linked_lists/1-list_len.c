@@ -11,7 +11,7 @@ size_t list_len(list_t *h)
 	int i = 0;
 	list_t *current = h;
 
-	while (*current != NULL)
+	while (current != NULL)
 	{
 		current = current->next;
 		i++;
