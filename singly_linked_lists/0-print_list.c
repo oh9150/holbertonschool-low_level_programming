@@ -3,13 +3,13 @@
 /**
  * print_list - prints the linked list
  * @h: a pointer to the head of the list
- * 
+ *
  * Return: the number of nodes in the list
  */
 size_t print_list(list_t *h)
 {
 	list_t *current = h;
-	long unsigned int i = 0;
+	unsigned long int i = 0;
 
 	while (current != NULL)
 	{
