@@ -14,7 +14,7 @@ list_t *add_node(list_t **head, const char *str)
 
 	for (len = 0; *(str + len * sizeof(char)) == '\0'; len++)
 		;
-
+	len++;
 	if (new_head == NULL)
 	{
 		free(new_head);
