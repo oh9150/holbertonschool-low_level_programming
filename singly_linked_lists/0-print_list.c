@@ -8,8 +8,8 @@
  */
 size_t print_list(const list_t *h)
 {
-	list_t *current = h;
-	long unsigned int i;
+	list_t *current = (list_t)h;
+	long unsigned int i = 0;
 
 	while (current != NULL)
 	{
@@ -22,5 +22,5 @@ size_t print_list(const list_t *h)
 		current = current->next;
 		i++;
 	}
-}
-		
+	return (i);
+}		
