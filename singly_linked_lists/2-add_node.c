@@ -31,7 +31,7 @@ list_t *add_node(list_t **head, const char *str)
 		new_head->next = NULL;
 	else
 		new_head->next = *head;
-
+	*head = new_head;
 
 	return (new_head);
 }
