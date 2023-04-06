@@ -8,7 +8,6 @@
  */
 void free_list(list_t *head)
 {
-	int i = 0, j = 0;
 	list_t *current = head;
 
 	while (head != NULL)
