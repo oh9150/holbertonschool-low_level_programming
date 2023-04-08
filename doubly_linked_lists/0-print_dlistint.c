@@ -6,7 +6,7 @@
  *
  * Return: the ammount of nodes in the list
  */
-size_t print_dlistint(const dlistint_t *h)
+size_t print_dlistint(const dlistint_s *h)
 {
 	size_t i;
 
