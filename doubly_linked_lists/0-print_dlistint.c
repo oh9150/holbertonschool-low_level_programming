@@ -8,7 +8,7 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	unsigned long int i;
+	size_t i;
 
 	while (h->prev != NULL)
 		h = h->prev;
