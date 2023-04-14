@@ -60,7 +60,7 @@ int main(int argc, char **argv)
 	}
 	if (close(fd) == -1)
 		__exit(100, NULL, fd);
-	if (close(fd) == -1)
+	if (close(fd1) == -1)
 		__exit(100, NULL, fd1);
 	return (0);
 }
