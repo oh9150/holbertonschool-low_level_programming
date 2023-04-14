@@ -18,10 +18,10 @@ void __exit(int value,char *filename, int fd)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 			break;
 		case 99:
-			dprintf(STDERR_FILENO, "Error can't write to %s\n", filename);
+			dprintf(STDERR_FILENO, "Error Can't write to %s\n", filename);
 			break;
 		case 100:
-			dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd);
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 			break;
 	}
 	exit(value);
