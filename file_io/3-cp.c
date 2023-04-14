@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _exit - auxiliary function for exit
+ * __exit - auxiliary function for exit
  * @value: the value to exit with
  * @filename: the name of a file
  * @fd: a file descriptor
  * Return: void
  */
-void __exit(int value,char *filename, int fd)
+void __exit(int value, char *filename, int fd)
 {
 	switch (value)
 	{
