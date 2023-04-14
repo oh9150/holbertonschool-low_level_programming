@@ -7,7 +7,7 @@
  * @fd: a file descriptor
  * Return: void
  */
-void _exit(int value,char *filename, int fd)
+void __exit(int value,char *filename, int fd)
 {
 	switch (value)
 	{
@@ -40,26 +40,26 @@ int main(int argc, char **argv)
 	char buf[1024];
 
 	if (argc != 3)
-		_exit(97, NULL, 0);
+		__exit(97, NULL, 0);
 
 	fd = open(argv[1], O_TRUNC | O_RDONLY);
 	if (fd == -1)
-		_exit(98, argv[1], 0);
+		__exit(98, argv[1], 0);
 
 	fd1 = open(argv[2], O_CREAT | O_WRONLY, 664);
 	if (fd1 == -1)
-		_exit(99, argv[2], 0);
+		__exit(99, argv[2], 0);
 
 	while (read_value = read(fd, buf, 1024) != 0)
 	{
 		if (read_value == -1)
-			_exit(98, argv[1], 0);
+			__exit(98, argv[1], 0);
 		write_value = write(fd1, buf, 1024);
 		if (write_value == -1)
-			exit(99, argv[2], 0);
+			__exit(99, argv[2], 0);
 	}
 	if (close(fd) == -1)
-		exit(100, NULL, fd);
+		__exit(100, NULL, fd);
 	if (close(fd) == -1)
-		exit(100, NULL, fd1);
+		__exit(100, NULL, fd1);
 }
