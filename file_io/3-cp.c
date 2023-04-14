@@ -18,7 +18,7 @@ void __exit(int value,char *filename, int fd)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 			break;
 		case 99:
-			dprintf(STERR_FILENO, "Error can't write to %s\n", filename);
+			dprintf(STDERR_FILENO, "Error can't write to %s\n", filename);
 			break;
 		case 100:
 			dprintf(STDERR_FILENO, "Error: can't close fd %d\n", fd);
@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 	if (fd1 == -1)
 		__exit(99, argv[2], 0);
 
-	while (read_value = read(fd, buf, 1024) != 0)
+	while ((read_value = read(fd, buf, 1024)) != 0)
 	{
 		if (read_value == -1)
 			__exit(98, argv[1], 0);
@@ -62,4 +62,5 @@ int main(int argc, char **argv)
 		__exit(100, NULL, fd);
 	if (close(fd) == -1)
 		__exit(100, NULL, fd1);
+	return (0);
 }
