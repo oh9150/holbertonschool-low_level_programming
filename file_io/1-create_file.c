@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * crate_file - creates a file
+ * create_file - creates a file
  * @filename: the name of the file
  * @text_content: the text to write in the file
  *
@@ -14,9 +14,9 @@ int create_file(const char *filename, char *text_content)
 	if (!filename)
 		return (ERROR_VALUE);
 
-	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC);
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (fd == -1)
-		return(ERROR_VALUE);
+		return (ERROR_VALUE);
 
 	write_result = write(fd, text_content, strlen(text_content));
 	if (write_result == -1)
