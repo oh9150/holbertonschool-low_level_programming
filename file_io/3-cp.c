@@ -7,7 +7,7 @@
  * @fd: a file descriptor
  * Return: void
  */
-void _exit(int value, *filename, fd)
+void _exit(int value,char *filename, int fd)
 {
 	switch (value)
 	{
