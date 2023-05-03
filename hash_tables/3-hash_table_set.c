@@ -7,7 +7,7 @@
  *
  * Return: 1, 0 on fail
  */
-int hash_table_set(hash_table_t *ht, const char *key, const char *value)
+int hash_table_set(hash_table_t *ht, const unsigned char *key, const char *value)
 {
 	size_t index = key_index(key, ht->size);
 	hash_node_t *new_node;
