@@ -9,7 +9,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	size_t index = key_index(key);
+	size_t index = key_index(key, ht->size);
 	hash_node_t *new_node;
 
 	if (!(ht | key | value))
