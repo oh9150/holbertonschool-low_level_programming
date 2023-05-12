@@ -7,33 +7,18 @@
  *
  * Return: a pointer to the new head of the list, NULL if it fails
  */
-list_t *add_node(list_t **head, const char *str)
+dlistint_t *add_node(dlistint_t **head, const int n)
 {
-	list_t *new_head = malloc(sizeof(list_t));
-	int len;
+	dlistint_t new_node;
 
-	for (len = 0; *(str + len * sizeof(char)) != '\0'; len++)
-		;
-
-	if (new_head == NULL)
-	{
-		free(new_head);
+	new_node = malloc(sizeof(dlistint_t));
+	if (!new_node)
 		return (NULL);
-	}
-	new_head->str = strdup(str);
-	new_head->len = len;
-	if (new_head->str == NULL)
-	{
-		free(new_head);
-		return (NULL);
-	}
-	while (*head->prev)
-		head = *head->prev
-	if (head == NULL)
-		new_head->next = NULL;
-	else
-		new_head->next = *head;
-	*head = new_head;
+	new_node.n = n;
+	new_node.next = *head;
+	new_node.prev = NULL;
+	if (head)
+		*head->prev = &new_node;
 
-	return (new_head);
+	return (&new_head);
 }
