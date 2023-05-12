@@ -16,15 +16,15 @@ int hash_table_set(hash_table_t *ht, const unsigned char *key, const char *value
 	if (!new_node)
 		return (0);
 
-	new_node->key = key;
+	new_node->key = strdup(key);
 	new_node->value = strdup(value);
-	if (!value)
-		return (0)
+	if (!(value || key))
+		return (0);
 
 	if (ht->*array[index])
 		new_node->next = ht->*array[index];
 
-	*array[index] = new_node;
+	ht->*array[index] = new_node;
 		
 	return (1);
 }
