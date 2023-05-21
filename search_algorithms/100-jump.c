@@ -10,7 +10,7 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int n, i;
+	int n, i = 0;
 
 	if (!array)
 		return (-1);
@@ -24,7 +24,7 @@ int jump_search(int *array, size_t size, int value)
 			break;
 		i += n;
 	}
-	printf("Value found between indexes [%d] and [%d]\n", i - n, i);
+	printf("Value found between indexes [%d] and [%d]\n", i, i + n);
 
 	while (array[i] < value)
 	{
